@@ -1,0 +1,28 @@
+{
+	tickDayDatas(
+    first : CHUNKSIZE, 
+    skip  : OFFSET,
+    where : {
+    	tick_contains : \"TICK_ID\"
+    }
+  ){
+    id
+    date
+    tick {
+      price0
+      price1
+      volumeToken0
+      volumeToken1
+      createdAtTimestamp
+      liquidityProviderCount
+      liquidityNet
+      liquidityGross
+    }
+    liquidityNet
+    liquidityGross
+    volumeUSD
+    volumeToken0
+    volumeToken1
+    feesUSD
+  }
+}

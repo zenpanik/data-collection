@@ -1,0 +1,16 @@
+{
+  ticks(
+    first : CHUNKSIZE, 
+    skip  : OFFSET,
+    where : {
+      poolAddress : \"POOL_ID\"
+    }
+  ){
+    id,
+    tickIdx,
+    price0,
+    price1,
+    liquidityNet,
+    liquidityGross
+  }
+}
